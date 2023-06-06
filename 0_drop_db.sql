@@ -1,0 +1,1 @@
+DROP DATABASE travel_money_cards;
