@@ -7,6 +7,7 @@ My database stores data about travel money cards. A travel money card is similar
 A travel money card has card number and expiry date, just like a debit or credit card.
 
 ## Database Model
+![Travel Money Cards Database Model](./navdeep_kaur_sql_project/db_model/db-model.png "Travel Money Cards - Database Model")
 
 ### Tables
 | Table Name         | Description                                                                                                                                                                                                    |
