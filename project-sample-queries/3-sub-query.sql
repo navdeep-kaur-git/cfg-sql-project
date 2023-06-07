@@ -2,6 +2,21 @@
 
 USE travel_money_cards;
 
+-- select customers who have positive balance for Euros
+SELECT
+    first_name,
+    last_name
+FROM customers
+WHERE customer_id IN (
+    SELECT customer_id FROM money_cards
+    WHERE card_number IN (
+        SELECT card_number FROM card_balances
+        WHERE currency_code = 'EUR'
+        AND balance > 0
+    )
+)
+
+-- select customers with addresses
 SELECT
     cust.customer_id,
     cust.first_name,
