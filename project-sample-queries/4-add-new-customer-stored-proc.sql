@@ -3,7 +3,7 @@
 /*
 SYNTAX:
 
-CALL `travel_money_cards`.`create_new_customer`(
+CALL create_new_customer(
     <{IN p_first_name VARCHAR(50)}>, 
     <{IN p_last_name VARCHAR(50)}>, 
     <{IN p_email VARCHAR(50)}>, 
@@ -20,7 +20,7 @@ CALL `travel_money_cards`.`create_new_customer`(
 
 USE travel_money_cards;
 
-CALL `travel_money_cards`.`create_new_customer`(
+CALL create_new_customer(
     'Liam',
     'Adams', 
     'l.adams@outlook.uk', 

@@ -4,10 +4,10 @@
 /*
 SYNTAX:
 
-`travel_money_cards`.`get_country_id`(<{p_country_name VARCHAR(50)}>)
+get_country_id(<{p_country_name VARCHAR(50)}>)
 
 */
-SELECT `travel_money_cards`.`get_country_id`('United Kingdom') AS country_id;
+SELECT get_country_id('United Kingdom') AS country_id;
 
 
 --############################################################################
@@ -17,13 +17,13 @@ SELECT `travel_money_cards`.`get_country_id`('United Kingdom') AS country_id;
 /*
 SYNTAX:
 
-`travel_money_cards`.`error_if_invalid_currency_code`(<{p_currency_code VARCHAR(3)}>)
+error_if_invalid_currency_code(<{p_currency_code VARCHAR(3)}>)
 
 */
 -- valid codes are: AUD, EUR, USD, etc
 -- EUR is valid, should work
-SELECT `travel_money_cards`.`error_if_invalid_currency_code`('EUR') AS is_valid_currency_code;
+SELECT error_if_invalid_currency_code('EUR') AS is_valid_currency_code;
 
 
 -- RUE is invalid code, should throw an error with details
-SELECT `travel_money_cards`.`error_if_invalid_currency_code`('RUE') AS is_valid_currency_code;
+SELECT error_if_invalid_currency_code('RUE') AS is_valid_currency_code;

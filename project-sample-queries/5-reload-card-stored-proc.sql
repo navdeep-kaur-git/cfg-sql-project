@@ -3,7 +3,7 @@
 /*
 SYNTAX:
 
-CALL `travel_money_cards`.`reload_card`(
+CALL reload_card(
     <{IN p_first_name VARCHAR(50)}>, 
     <{IN p_last_name VARCHAR(50)}>, 
     <{IN p_card_number BIGINT}>, 
@@ -16,7 +16,7 @@ CALL `travel_money_cards`.`reload_card`(
 
 USE travel_money_cards;
 
-CALL `travel_money_cards`.`reload_card`(
+CALL reload_card(
     'Dane',
     'Wallace',
     '1000000003',
@@ -26,7 +26,7 @@ CALL `travel_money_cards`.`reload_card`(
     'EUR');
 
 
-CALL `travel_money_cards`.`reload_card`(
+CALL reload_card(
     'Dane',
     'Wallace',
     '1000000003',
